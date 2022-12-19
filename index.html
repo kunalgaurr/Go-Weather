@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="img/cloudy.png">
+    <title>Go Weather</title>
+</head>
+
+<body>
+    <nav>
+        <div class="leftSide">
+            <h1 class="navText">Go Weather</h1>
+        </div>
+        <div class="rightSide">
+            <a href="">Home</a>
+            <a href="">About this application</a>
+            <a href="">How to use?</a>
+        </div>
+    </nav>
+    <section>
+
+
+        <h1 class="titleText">Weather for <span id="cityName"></span></h1>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+        <lottie-player src="https://lottie.host/9152fbc4-c20a-4f02-a1b5-55765005018d/wStMwy8sKv.json"
+            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+
+        <div>
+            <input type="text" id="city">
+            <button type="submit" id="submit">Search</button>
+        </div>
+
+        
+        <div class="cards">
+
+
+            <div class="card">
+                <h4 class="cardText">Temprature</h4>
+                <ul>
+                    <li>Temprature is <span id="temp"></span></li>
+                    <li>Minimum temprature is <span id="min_temp"></span></li>
+                    <li>Maximum temprature is <span id="max_temp"></span></li>
+
+                </ul>
+            </div>
+
+            
+            <div class="card">
+                <h4 class="cardText">Humidity Information</h4>
+                <ul>
+                    <li>Wind Speed is <span id="wind_speed"></span></li>
+                    <li>Feels like <span id="feels_like"></span></li>
+                    <li>Humidity is <span id="humidity"></span></li>
+                </ul>
+            </div>
+
+
+            <div class="card">
+                <h4 class="cardText">Temprature</h4>
+                <ul>
+
+                    <li>Wind temprature is <span id="wind_degrees"></span></li>
+                    <li>Sunrise time is <span id="sunrise"></span></li>
+                    <li>Sunset time is <span id="sunset"></span></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="other">
+
+
+            <h1 class="otherText">Weather of other common places</h1>
+
+
+            <table>
+
+
+                <thead>
+
+
+                    <th></th>
+                    <th>Cloud pct</th>
+                    <th>Feels like</th>
+                    <th>Humidity</th>
+                    <th>Maximum temprature</th>
+                    <th>Minimum temprature</th>
+                    <th>Sunrise</th>
+                    <th>Sunset</th>
+                    <th>Temprature</th>
+                    <th>Wind Temprature</th>
+                    <th>Wind Speed</th>
+
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <tr>
+
+
+                        <th>Shanghai</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+
+
+                    </tr>
+
+
+                    <tr>
+
+
+                        <th>Moscow</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+
+
+                    </tr>
+
+
+                    <tr>
+
+
+                        <th>New York</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+
+
+                    </tr>
+
+
+                    <tr>
+
+
+                        <th>Mumbai</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+
+    </section>
+
+
+    <script src="script/script.js"></script>
+
+    
+</body>
+
+</html>

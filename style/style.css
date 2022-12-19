@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Raleway:wght@200;300&family=Roboto+Mono&family=Roboto:wght@300&family=Source+Code+Pro:wght@500&family=Source+Sans+Pro:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100vw;
+    color: white;
+    background-color: #2192FF;
+}
+.rightSide a{
+    padding: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+section{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2192FF 30%, #FFF9B0);
+}
+.titleText{
+    color: white;
+    font-size: 2rem;
+}
+section div{
+    margin: 1rem;
+}
+input{
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+button{
+    font-family: 'Raleway', sans-serif;
+    background: none;
+    border: 2px solid white;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 2px solid white;
+    color: white;
+    height: 15rem;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: top;
+    border-radius: 10px;
+}
+.card ul{
+    margin-left: -2.5rem;
+}
+.card li{
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+}
+table{
+    text-align: center;
+    color: black;
+
+    background-color: #DDDDDD;
+}
+thead th{
+    padding: 20px;
+}
+tbody th{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+@media(max-width: 1200px){
+    .other{
+        display: none;
+    }
+    table{
+        display: none;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .rightSide{
+        display: none;
+    }
+}
